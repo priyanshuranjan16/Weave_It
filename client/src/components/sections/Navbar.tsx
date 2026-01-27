@@ -68,13 +68,13 @@ const Navbar = () => {
         {/* Right Section */}
         <div className="flex items-start gap-[30px] h-full">
           {/* Nav Links - Desktop Only */}
-          <nav className="hidden lg:flex items-start p-1 h-full gap-4">
+          <nav className="hidden lg:flex items-start p-1 h-full gap-1">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-[13px] uppercase tracking-[0.06em] text-black/70 
-                  px-4 py-2 rounded-sm transition-all duration-200
+                className="text-[13px] uppercase tracking-[0.06em] text-black/700
+                  px-3 py-2 rounded-sm transition-all duration-200
                   flex items-center justify-center
                   hover:text-white hover:bg-[#0E0E13]"
               >
@@ -87,8 +87,8 @@ const Navbar = () => {
           <Link
             href="/signin"
             className={`bg-[#FDFFA8] text-black flex items-end justify-center tracking-wide transition-all duration-300 rounded-bl-md hover:text-white hover:bg-[#16161c] active:scale-[0.98] ${scrolled
-                ? 'h-[42px] px-2 text-[13px] pb-1 uppercase'
-                : 'h-20 px-4 text-[28px] pb-1'
+              ? 'h-[32px] px-2 text-[13px] pb- uppercase'
+              : 'h-25 px-4 text-[28px] pb-1'
               }`}
           >
             Start Now

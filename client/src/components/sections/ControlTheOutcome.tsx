@@ -67,7 +67,7 @@ const ControlTheOutcome = () => {
 
       {/* Parallax Composition */}
       <div className="container mx-auto px-2 md:px-[5%] relative z-10 min-h-[100px] md:min-h-[400px] flex items-center justify-center perspective-1000">
-        <div className="relative w-full max-w-[1200px] aspect-[1/1] md:aspect-[16/9]">
+        <div className="relative w-full max-w-full aspect-[1/1] md:aspect-[16/9]">
           {/* Main Background UI */}
           <img
             src="https://cdn.prod.website-files.com/681b040781d5b5e278a69989/682ee0eea4106dbd4133065d_Weavy%20UI.avif"
@@ -82,7 +82,7 @@ const ControlTheOutcome = () => {
             className="absolute w-[68%] h-auto object-contain z-10"
             style={{ left: '16%', top: '1%' }}
           />
-          
+
           {/* Inner Parallax Container - Only render on desktop */}
           {!isMobile && (
             <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">

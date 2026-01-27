@@ -172,7 +172,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="font-mono text-[10px] text-[#1A1A1A]/60 uppercase tracking-[0.1em] flex gap-4">
-            <span>WEAVY © 2025.</span>
+            <span>WEAVY © 2026.</span>
             <span>ALL RIGHTS RESERVED.</span>
           </div>
         </div>

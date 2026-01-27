@@ -34,19 +34,7 @@ export default function WorkflowsSlider() {
             </p>
           </div>
 
-          {/* Navigation Controls - Desktop */}
-          <div className="hidden md:flex gap-[12px]">
-            <NavigationButton
-              direction="left"
-              onClick={() => scrollLeft()}
-              disabled={!canScrollLeft}
-            />
-            <NavigationButton
-              direction="right"
-              onClick={() => scrollRight()}
-              disabled={!canScrollRight}
-            />
-          </div>
+
         </div>
       </div>
 
@@ -60,6 +48,22 @@ export default function WorkflowsSlider() {
           {WORKFLOW_CARDS.map((workflow) => (
             <WorkflowCardComponent key={workflow.id} workflow={workflow} />
           ))}
+        </div>
+      </div>
+
+      {/* Navigation Controls - Desktop (Bottom Left) */}
+      <div className="container px-[5%] max-w-[1440px] mx-auto hidden md:block mt-[40px]">
+        <div className="flex gap-[12px]">
+          <NavigationButton
+            direction="left"
+            onClick={() => scrollLeft()}
+            disabled={!canScrollLeft}
+          />
+          <NavigationButton
+            direction="right"
+            onClick={() => scrollRight()}
+            disabled={!canScrollRight}
+          />
         </div>
       </div>
 
@@ -107,11 +111,10 @@ const NavigationButton = ({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`${dimensions} rounded-full border flex items-center justify-center transition-all duration-300 ${
-        disabled
+      className={`${dimensions} rounded-[12px] border flex items-center justify-center transition-all duration-300 ${disabled
           ? 'border-white/10 text-white/20 cursor-not-allowed'
           : 'border-white/20 text-white hover:bg-white hover:text-black'
-      }`}
+        }`}
     >
       <Icon size={iconSize} strokeWidth={2} />
     </button>

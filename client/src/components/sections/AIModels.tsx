@@ -37,9 +37,8 @@ export default function AIModelsSection() {
           {AI_MODELS.map((model, idx) => (
             <div
               key={idx}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                activeIndex === idx ? 'opacity-100' : 'opacity-0'
-              }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${activeIndex === idx ? 'opacity-100' : 'opacity-0'
+                }`}
             >
               {model.src ? (
                 model.type === 'video' ? (
@@ -78,40 +77,40 @@ export default function AIModelsSection() {
         {/* Content Overlay - Responsive Layout */}
         <div className="relative z-30 h-full w-full flex flex-col md:flex-row">
           {/* Left Text Content - Top on mobile */}
-          <div className="w-full md:w-[40%] h-auto md:h-full flex flex-col justify-start md:justify-center pt-20 md:pt-0 px-4 md:px-0 md:pl-12 lg:pl-20">
-            <h2
+          <div className="w-full md:w-[40%] h-auto md:h-full flex flex-col justify-start md:justify-start md:pt-[20vh] pt-20 px-4 md:px-0 md:pl-12 lg:pl-20">
+            <h1
               className="text-white font-light leading-[0.95] tracking-[-0.03em] mb-4 md:mb-6 md:text-[5rem] text-[4rem] "
               style={{
                 fontFamily: "'Inter', -apple-system, sans-serif",
               }}
             >
-              Use all AI models, together at last
-            </h2>
+              Use all AI <br /> models,<br /> together at <br />last
+            </h1>
             <p
-              className="text-white leading-relaxed text-sm md:text-base"
+              className="mt-15 md:mt-8 text-white leading-relaxed text-sm md:text-base"
               style={{
                 fontFamily: "'Inter', -apple-system, sans-serif",
               }}
             >
-              AI models and professional editing tools in one node-based platform. Turn creative vision into scalable workflows without compromising quality.
+              AI models and professional editing tools in one node-<br />based platform. Turn creative vision into scalable<br /> workflows without compromising quality.
             </p>
+
           </div>
 
           {/* Right Scrolling List of Model Names - Below text on mobile */}
-          <div className="w-full md:w-[55%] flex-1 md:h-full flex items-start md:items-center justify-start overflow-hidden px-4 md:px-0 mt-8 md:mt-0">
+          <div className="w-full md:w-[55%] flex-1 md:h-full flex items-start justify-start overflow-hidden px-4 md:px-0 mt-8 md:mt-0">
             <div className="relative h-auto w-full">
               <div
-                className="transition-transform duration-700 ease-out flex flex-col mt-2 md:mt-20"
+                className="transition-transform duration-700 ease-out flex flex-col"
                 style={{
-                  transform: `translateY(calc(20vh - ${activeIndex * 48}px))`,
+                  transform: `translateY(calc(20vh - ${activeIndex * 5.2}rem))`,
                 }}
               >
                 {AI_MODELS.map((model, idx) => (
                   <div
                     key={idx}
-                    className={`flex items-center transition-all duration-500 whitespace-nowrap ${
-                      activeIndex === idx ? 'text-[#f7ff9e]' : 'opacity-40'
-                    }`}
+                    className={`flex items-center transition-all duration-500 whitespace-nowrap ${activeIndex === idx ? 'text-[#f7ff9e]' : 'opacity-300'
+                      }`}
                   >
                     <span
                       className="tracking-[-0.02em] text-[4rem]"
@@ -119,7 +118,7 @@ export default function AIModelsSection() {
                         fontFamily: "'General Sans', 'Inter', -apple-system, sans-serif",
                         fontWeight: 400,
                         lineHeight: 1.3,
-                        color: activeIndex === idx ? '#f7ff9e' : 'rgba(255, 255, 255, 0.4)',
+                        color: activeIndex === idx ? '#f7ff9e' : 'rgba(255, 255, 255, 1)',
                       }}
                     >
                       {model.name}
