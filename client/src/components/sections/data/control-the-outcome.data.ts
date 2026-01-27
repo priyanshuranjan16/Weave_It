@@ -27,7 +27,7 @@ export const PARALLAX_IMAGES: ParallaxImage[] = [
         baseY: 5.7,
         scrollMultiplier: [-25, -8],
         mouseMultiplier: -80,
-        zIndex: 50,
+        zIndex: 70,
     },
     {
         src: 'https://cdn.prod.website-files.com/681b040781d5b5e278a69989/682ee1e3553ccb7b1eac8758_text%20-%20in%20astro.svg',
