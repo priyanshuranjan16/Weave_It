@@ -45,7 +45,7 @@ const Navbar = () => {
       className={`navbar_main flex flex-col w-full fixed top-0 left-0 z-[1000] bg-transparent transition-all duration-500 ${navbarVisibilityClass}`}
     >
       {/* Announcement Banner */}
-      <AnnouncementBanner />
+      {/* <AnnouncementBanner /> */}
 
       {/* Main Navigation */}
       <div className="flex justify-between w-full h-20 border-black/5">
@@ -86,11 +86,10 @@ const Navbar = () => {
           {/* Start Now CTA */}
           <Link
             href="/signin"
-            className={`bg-[#FDFFA8] text-black flex items-end justify-center tracking-wide transition-all duration-300 rounded-bl-md hover:text-white hover:bg-[#16161c] active:scale-[0.98] ${
-              scrolled
+            className={`bg-[#FDFFA8] text-black flex items-end justify-center tracking-wide transition-all duration-300 rounded-bl-md hover:text-white hover:bg-[#16161c] active:scale-[0.98] ${scrolled
                 ? 'h-[42px] px-2 text-[13px] pb-1 uppercase'
                 : 'h-20 px-4 text-[28px] pb-1'
-            }`}
+              }`}
           >
             Start Now
           </Link>

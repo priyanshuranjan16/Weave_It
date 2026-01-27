@@ -34,11 +34,11 @@ const nodeTypes = {
  */
 const HeroSection = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
-  
+
   // Use mobile-optimized nodes on smaller screens
   const initialNodes = useMemo(() => isMobile ? HERO_NODES_MOBILE : HERO_NODES, [isMobile]);
   const nodeExtent = useMemo(() => isMobile ? HERO_NODE_EXTENT_MOBILE : HERO_NODE_EXTENT, [isMobile]);
-  
+
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(HERO_EDGES);
 
@@ -64,31 +64,30 @@ const HeroSection = () => {
       }}
     >
       {/* Hero Text Content (Overlay) */}
-      <div className="absolute mr-2 top-24 md:top-32 left-4 md:left-16 z-10 pointer-events-none select-none max-w-7xl">
-  <div className="flex flex-col gap-6 md:gap-8">
-    {/* Title Section */}
-    <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-25">
+      <div className="absolute top-24 md:top-32 left-6 md:left-20 z-10 pointer-events-none select-none max-w-7xl">
+  <div className="flex flex-col gap-8">
+    
+    {/* Headline Row */}
+    <div className="flex items-baseline gap-16">
       <h1 className="text-7xl lg:text-8xl leading-none tracking-tight text-black font-normal">
         Weavy
       </h1>
-      <div className="flex flex-col md:items-start items-end">
-        <h2 className="text-7xl lg:text-8xl leading-none tracking-tight text-black font-normal">
-          Artistic
-        </h2>
-        <h2 className="text-7xl lg:text-8xl leading-none tracking-tight text-black font-normal ">
-          Intelligence
-        </h2>
-      </div>
+
+      <h2 className="text-7xl lg:text-8xl leading-none tracking-tight text-black font-normal">
+        Artistic Intelligence
+      </h2>
     </div>
-    
+
     {/* Description */}
-    <div className="md:pl-80 pl-12 ">
-      <p className="max-w-md md:max-w-lg text-base md:text-lg leading-relaxed text-black/90">
+    <div className="ml-[22.5rem]">
+      <p className="max-w-lg text-base md:text-lg leading-relaxed text-black/90">
         Turn your creative vision into scalable workflows. Access all AI models and professional editing tools in one node based platform.
       </p>
     </div>
+
   </div>
 </div>
+
 
       {/* React Flow Container */}
       <div

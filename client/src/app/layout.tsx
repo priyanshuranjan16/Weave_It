@@ -4,7 +4,7 @@ import { TRPCProvider } from '@/lib/trpc/provider';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Weavy',
+  title: 'Weave-It - Build AI workflows',
   description:
     'Unified AI model access and node-based workflow builder UI prototype.',
 };

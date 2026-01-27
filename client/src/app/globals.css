@@ -159,6 +159,15 @@
       Roboto, sans-serif;
   }
 
+  a,
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
   html {
     scroll-behavior: smooth;
   }
