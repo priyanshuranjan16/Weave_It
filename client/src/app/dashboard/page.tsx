@@ -181,7 +181,7 @@ export default function DashboardPage() {
   // Handlers
   const handleLogout = async () => {
     await signOut();
-    router.replace('/signin');
+    router.replace('/');
   };
 
   const handleCreateNewFile = React.useCallback(async () => {
