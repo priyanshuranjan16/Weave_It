@@ -103,7 +103,7 @@ export default function SignInPage() {
       </div>
 
       <div className="absolute bottom-6 right-8 text-[12px] text-gray-500">
-        © 2025 Weavy. All rights reserved.
+        © 2026 Weavy. All rights reserved.
       </div>
     </div>
   );
