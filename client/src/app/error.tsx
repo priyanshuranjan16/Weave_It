@@ -85,7 +85,7 @@ export default function Error({
 
             {/* Footer */}
             <div className="absolute bottom-6 right-8 text-xs text-gray-500">
-                © 2025 Weavy. All rights reserved.
+                © 2026 Weavy. All rights reserved.
             </div>
         </div>
     );
