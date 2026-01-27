@@ -29,7 +29,7 @@ Follow these steps into get a local copy up and running.
 
 Ensure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/) (v18 or higher)
-- [npm](https://www.npmjs.com/), [yarn](https://yarnpkg.com/), [pnpm](https://pnpm.io/), or [bun](https://bun.sh/)
+- [bun](https://bun.sh/)
 
 ### 1. Clone the Repository
 
@@ -43,8 +43,6 @@ cd client
 Install the project dependencies using your preferred package manager:
 
 ```bash
-npm install
-# or
 bun install
 ```
 
@@ -82,7 +80,7 @@ NEXT_PUBLIC_TRANSLOADIT_KEY=...
 Generate the Prisma client to ensure type safety with your database schema:
 
 ```bash
-npx prisma generate
+bunx prisma generate
 ```
 
 ### 5. Run the Development Server
@@ -90,8 +88,6 @@ npx prisma generate
 Start the local development server:
 
 ```bash
-npm run dev
-# or
 bun dev
 ```
 
@@ -101,11 +97,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 In the project directory, you can run:
 
-- **`npm run dev`**: Runs the app in development mode.
-- **`npm run build`**: Builds the app for production. It also generates the Prisma client.
-- **`npm run start`**: Starts the production server.
-- **`npm run lint`**: Runs ESLint to check for code quality and style issues.
-- **`npm run postinstall`**: Automatically runs `prisma generate` after dependencies are installed.
+- **`bun dev`**: Runs the app in development mode.
+- **`bun run build`**: Builds the app for production. It also generates the Prisma client.
+- **`bun run start`**: Starts the production server.
+- **`bun run lint`**: Runs ESLint to check for code quality and style issues.
+- **`bun run postinstall`**: Automatically runs `prisma generate` after dependencies are installed.
 
 ## 📂 Project Structure
 
