@@ -15,7 +15,7 @@ import { Folder as FolderIcon } from 'lucide-react';
 import type { MoveDialogProps, CreateFolderDialogProps } from '../types';
 import { cn } from '@/lib/utils';
 
-/**
+/*
  * MoveDialog Component
  * 
  * Dialog for moving a workflow to a different folder
