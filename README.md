@@ -1,4 +1,4 @@
-# Weave_It (WeavyAI)
+# Weave_It - Weave your own Workflows
 
 Weave_It is a modern, AI-powered web application built with Next.js, designed to streamline workflows and application building. It leverages the power of Google Gemini AI for intelligence, Clerk for secure authentication, and Trigger.dev for robust background job processing.
 
