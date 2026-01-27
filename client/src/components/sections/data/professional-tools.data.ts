@@ -4,15 +4,16 @@ import type { ChipPosition } from '../types';
  * Pre-defined positions for tool chips in the Professional Tools section
  */
 export const CHIP_POSITIONS: ChipPosition[] = [
-    { toolId: 'crop', top: '23%', left: '3%' },
-    { toolId: 'invert', top: '15%', right: '8%' },
-    { toolId: 'outpaint', top: '30%', left: '23%' },
-    { toolId: 'inpaint', top: '38%', left: '8%' },
-    { toolId: 'mask', top: '44%', right: '5%' },
-    { toolId: 'upscale', top: '50%', left: '21%' },
-    { toolId: 'painter', top: '22%', right: '22%' },
-    { toolId: 'channels', top: '35%', right: '18%' },
-    { toolId: 'describer', top: '18%', left: '18%' },
-    { toolId: 'relight', top: '52%', left: '5%' },
-    { toolId: 'zdepth', top: '53%', right: '18%' },
+    { toolId: 'crop', top: '18%', left: '5%' },
+    { toolId: 'inpaint', top: '46%', left: '3%' },
+    { toolId: 'outpaint', top: '33%', left: '15%' },
+    { toolId: 'upscale', top: '65%', left: '10%' },
+    { toolId: 'mask', top: '55%', left: '18%' },
+
+    { toolId: 'painter', top: '15%', right: '5%' },
+    { toolId: 'invert', top: '25%', right: '20%' },
+    { toolId: 'channels', top: '35%', right: '5%' },
+    { toolId: 'describer', top: '48%', right: '18%' },
+    { toolId: 'relight', top: '55%', right: '3%' },
+    { toolId: 'zdepth', top: '68%', right: '15%' },
 ];
