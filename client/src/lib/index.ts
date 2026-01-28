@@ -25,4 +25,6 @@ export {
 export { cn, formatTimeAgo, debounce } from './utils';
 
 // Sample workflows (from workflow data)
-export { simpleTestWorkflow, productListingWorkflow } from '@/components/workflow/data/sampleWorkflows';
+export { simpleTestWorkflow } from '@/components/workflow/data/sampleWorkflows';
+
+// export {  productListingWorkflow } from '@/components/workflow/data/sampleWorkflows';
