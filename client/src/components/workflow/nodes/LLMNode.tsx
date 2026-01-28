@@ -341,7 +341,7 @@ export function LLMNode({ id, data, selected }: NodeProps<LLMFlowNode>) {
           <Button
             onClick={handleRun}
             disabled={isLoading}
-            className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+            className="w-full bg-black hover:bg-black/90 text-white"
           >
             {isLoading ? (
               <>

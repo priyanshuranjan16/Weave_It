@@ -457,7 +457,7 @@ export function ExtractFrameNode({ id, data, selected }: NodeProps<ExtractFrameF
                         <Button
                             onClick={handleExtractFrame}
                             disabled={isProcessing}
-                            className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                            className="w-full bg-black hover:bg-black/90 text-white"
                         >
                             {isProcessing ? (
                                 <>

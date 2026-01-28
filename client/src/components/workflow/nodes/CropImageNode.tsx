@@ -516,7 +516,7 @@ export function CropImageNode({ id, data, selected }: NodeProps<CropImageFlowNod
                         <Button
                             onClick={handleCrop}
                             disabled={isProcessing}
-                            className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                            className="w-full bg-black hover:bg-black/90 text-white"
                         >
                             {isProcessing ? (
                                 <>
