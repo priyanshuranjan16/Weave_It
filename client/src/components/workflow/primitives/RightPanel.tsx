@@ -101,7 +101,7 @@ export function RightPanel({
           <div className="flex items-center justify-between">
             <div className="text-[14px] flex items-center gap-1 font-medium text-foreground">
               <TbAsterisk className="text-[16px]" />
-              <p>149 credits</p>
+              <p>100 credits</p>
             </div>
             <Button
               size="sm"
