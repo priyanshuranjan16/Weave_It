@@ -357,7 +357,7 @@ export const simpleTestWorkflow = {
  * - Phase 4: LLM Node #2 (waits for LLM #1 + video frame)
  */
 export const marketingKitWorkflow = {
-    name: 'Product Marketing Kit Generator',
+    name: 'Marketing Kit Generator',
     nodes: [
         // ========== BRANCH A: IMAGE PROCESSING + PRODUCT DESCRIPTION ==========
 
@@ -406,7 +406,7 @@ export const marketingKitWorkflow = {
             type: 'text',
             position: { x: 1203.8, y: 225.5 },
             data: {
-                text: 'Product: Wireless Bluetooth Headphones\nFeatures: Noise cancellation, 30-hour battery, foldable design\nTarget Audience: Music lovers, remote workers, travelers',
+                text: 'Product: AI Model\nFeatures: Unlimited chat, image generation, video generation\nTarget Audience: Developers, designers, content creators',
                 label: 'Product Details',
             },
         },
