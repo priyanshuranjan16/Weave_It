@@ -4,12 +4,17 @@ import * as React from 'react';
 import Link from 'next/link';
 import {
   ChevronDown,
+  ChevronsLeft,
+  ChevronsRight,
   Crop,
   Film,
   HelpCircle,
   Images,
   Search,
   ImageIcon,
+  Bot,
+  Megaphone,
+  ShoppingBag,
   Sparkles,
   Type,
   Video,
@@ -104,7 +109,7 @@ export function LeftPanel({
           <div className="flex flex-1 flex-col items-center gap-2 px-2 pt-2">
             <button
               type="button"
-              aria-label="Search"
+              aria-label={isOpen ? "Collapse Sidebar" : "Expand Sidebar"}
               onClick={onToggle}
               className={cn(
                 'grid h-11 w-11 place-items-center rounded-md transition-colors',
@@ -112,7 +117,11 @@ export function LeftPanel({
                 isOpen && 'bg-accent text-accent-foreground'
               )}
             >
-              <Search className="h-5 w-5" />
+              {isOpen ? (
+                <ChevronsLeft className="h-5 w-5" />
+              ) : (
+                <ChevronsRight className="h-5 w-5" />
+              )}
             </button>
           </div>
 
@@ -272,9 +281,9 @@ export function LeftPanel({
                   variant="outline"
                   size="sm"
                   onClick={() => onLoadSample('marketing')}
-                  className="w-full justify-start text-left bg-purple-500/10 border-purple-500/50 hover:bg-purple-500/20"
+                  className="w-full justify-start text-left"
                 >
-                  <Sparkles className="h-4 w-4 mr-2 text-purple-400" />
+                  <Megaphone className="h-4 w-4 mr-2" />
                   Marketing Kit Generator
                 </Button>
                 <Button
@@ -283,18 +292,18 @@ export function LeftPanel({
                   onClick={() => onLoadSample('simple')}
                   className="w-full justify-start text-left"
                 >
-                  <Sparkles className="h-4 w-4 mr-2" />
-                  Simple LLM Test
+                  <Bot className="h-4 w-4 mr-2" />
+                   LLM Test
                 </Button>
-                <Button
+                {/* <Button
                   variant="outline"
                   size="sm"
                   onClick={() => onLoadSample('product')}
                   className="w-full justify-start text-left"
                 >
-                  <ImageIcon className="h-4 w-4 mr-2" />
+                  <ShoppingBag className="h-4 w-4 mr-2" />
                   Product Listing Generator
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>

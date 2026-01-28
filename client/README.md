@@ -105,11 +105,22 @@ In the project directory, you can run:
 
 ## 📂 Project Structure
 
-- **`src/app`**: Contains the App Router pages, layouts, and routing logic.
-- **`src/components`**: Reusable UI components and sections.
-- **`src/lib`**: Utility functions and configurations.
-- **`prisma`**: Database schema (`schema.prisma`) and migrations.
-- **`public`**: Static assets like images and fonts.
+```bash
+client/
+├── prisma/               # Database schema and migrations
+├── public/               # Static assets
+├── src/
+│   ├── app/              # App Router pages and layouts
+│   ├── components/       # UI components
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utilities and configuration
+│   ├── stores/           # State management (Zustand)
+│   ├── trigger/          # Trigger.dev background jobs
+│   └── types/            # TypeScript type definitions
+├── .env                  # Environment variables
+├── next.config.ts        # Next.js configuration
+└── package.json          # Project dependencies
+```
 
 ---
 

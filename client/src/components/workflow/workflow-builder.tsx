@@ -14,7 +14,9 @@ import {
 import '@xyflow/react/dist/style.css';
 
 import { useWorkflowStore } from '@/stores/workflowStore';
-import { simpleTestWorkflow, productListingWorkflow, marketingKitWorkflow } from '@/components/workflow/data/sampleWorkflows';
+import {  simpleTestWorkflow, marketingKitWorkflow } from '@/components/workflow/data/sampleWorkflows';
+// import { simpleTestWorkflow, productListingWorkflow} from '@/components/workflow/data/sampleWorkflows';
+
 import type { WorkflowNode, WorkflowEdge } from '@/types/workflow.types';
 import { isValidConnection as checkIsValidConnection } from '@/lib/connectionValidation';
 
@@ -149,9 +151,11 @@ function BuilderInner() {
       let workflow;
       if (sample === 'simple') {
         workflow = simpleTestWorkflow;
-      } else if (sample === 'product') {
-        workflow = productListingWorkflow;
-      } else {
+      } 
+      // else if (sample === 'product') {
+      //   workflow = productListingWorkflow;
+      // } 
+      else {
         workflow = marketingKitWorkflow;
       }
 
