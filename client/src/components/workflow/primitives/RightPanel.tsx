@@ -189,8 +189,8 @@ export function RightPanel({
                     className={cn(
                       'flex-1 flex h-9 items-center justify-center gap-1.5 rounded-md transition-colors',
                       hasNodes
-                        ? 'bg-purple-600 hover:bg-purple-700 text-white'
-                        : 'bg-purple-600/30 text-white/50 cursor-not-allowed'
+                        ? 'bg-black hover:bg-black/90 text-white'
+                        : 'bg-black/30 text-white/50 cursor-not-allowed'
                     )}
                   >
                     <Play className="h-4 w-4" />
@@ -211,7 +211,7 @@ export function RightPanel({
                     type="button"
                     aria-label="Run Selected"
                     onClick={onRunSelected}
-                    className="flex-1 flex h-9 items-center justify-center gap-1.5 rounded-md bg-purple-600/80 hover:bg-purple-600 text-white transition-colors"
+                    className="flex-1 flex h-9 items-center justify-center gap-1.5 rounded-md bg-black/80 hover:bg-black text-white transition-colors"
                   >
                     <Play className="h-3.5 w-3.5" />
                     <span className="text-xs font-medium">Run Selected</span>
