@@ -121,34 +121,7 @@ export const productListingWorkflow = {
             },
         },
 
-        // ========== OUTPUT LAYER (Right) ==========
-        // Amazon Result
-        {
-            id: 'result-amazon',
-            type: 'text',
-            position: { x: 1700, y: 80 },
-            data: {
-                text: '(Amazon listing will appear here after running)',
-            },
-        },
-        // Instagram Result
-        {
-            id: 'result-instagram',
-            type: 'text',
-            position: { x: 1700, y: 450 },
-            data: {
-                text: '(Instagram caption will appear here after running)',
-            },
-        },
-        // SEO Result
-        {
-            id: 'result-seo',
-            type: 'text',
-            position: { x: 1700, y: 820 },
-            data: {
-                text: '(SEO meta will appear here after running)',
-            },
-        },
+        
     ] as WorkflowNode[],
     edges: [
         // ========== INPUTS TO ANALYZE LLM ==========
@@ -329,14 +302,6 @@ export const simpleTestWorkflow = {
                 model: 'gemini-2.5-flash',
             },
         },
-        {
-            id: 'text-3',
-            type: 'text',
-            position: { x: 1000, y: 150 },
-            data: {
-                text: '(LLM response will appear here after running)',
-            },
-        },
     ] as WorkflowNode[],
     edges: [
         {
@@ -361,7 +326,7 @@ export const simpleTestWorkflow = {
             id: 'e-llm-result',
             source: 'llm-1',
             sourceHandle: 'output',
-            target: 'text-3',
+            target: 'text3',
             targetHandle: 'input',
             type: 'custom',
             style: { stroke: '#8B5CF6', strokeWidth: 2 },
@@ -572,7 +537,7 @@ export const marketingKitWorkflow = {
             source: 'llm-description',
             sourceHandle: 'output',
             target: 'llm-final',
-            targetHandle: 'user_message',
+            targetHandle: 'system_prompt',
             type: 'custom',
             style: { stroke: '#10B981', strokeWidth: 2 }, // Green for LLM output flow
         },
@@ -583,7 +548,7 @@ export const marketingKitWorkflow = {
             source: 'system-prompt-2',
             sourceHandle: 'output',
             target: 'llm-final',
-            targetHandle: 'system_prompt',
+            targetHandle: 'user_message',
             type: 'custom',
             style: { stroke: '#8B5CF6', strokeWidth: 2 },
         },
