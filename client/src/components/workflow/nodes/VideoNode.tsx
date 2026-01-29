@@ -164,7 +164,7 @@ export function VideoNode({ id, data, selected }: NodeProps<VideoFlowNode>) {
                 title={displayLabel}
                 icon={<Film className="h-4 w-4" />}
                 selected={selected}
-                className="w-[360px]"
+                className="w-90"
                 right={
                     <div className="flex items-center gap-1">
                         {isLocked && <Lock className="h-4 w-4 text-foreground/50" />}
@@ -226,7 +226,7 @@ export function VideoNode({ id, data, selected }: NodeProps<VideoFlowNode>) {
                             <video
                                 ref={videoRef}
                                 src={videoUrl}
-                                className="w-full max-h-[200px] object-contain"
+                                className="w-full max-h-50 object-contain"
                                 muted={isMuted}
                                 onTimeUpdate={handleTimeUpdate}
                                 onLoadedMetadata={handleLoadedMetadata}

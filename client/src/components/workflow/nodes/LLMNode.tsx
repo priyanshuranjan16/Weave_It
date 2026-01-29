@@ -282,7 +282,7 @@ export function LLMNode({ id, data, selected }: NodeProps<LLMFlowNode>) {
         title={displayLabel}
         icon={<Sparkles className="h-4 w-4" />}
         selected={selected}
-        className="w-[360px]"
+        className="w-90"
         right={
           <div className="flex items-center gap-1">
             {isLocked && <Lock className="h-4 w-4 text-foreground/50" />}
@@ -331,7 +331,7 @@ export function LLMNode({ id, data, selected }: NodeProps<LLMFlowNode>) {
               )}
             >
               <div className="flex items-start gap-2">
-                <X className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <X className="h-4 w-4 mt-0.5 shrink-0" />
                 <span>{data.error}</span>
               </div>
             </div>
@@ -364,7 +364,7 @@ export function LLMNode({ id, data, selected }: NodeProps<LLMFlowNode>) {
                 value={data.output || ''}
                 onChange={handleOutputChange}
                 placeholder={isLoading ? 'Generating response...' : 'LLM output will appear here...'}
-                className="nodrag min-h-[100px] max-h-[200px] resize-y bg-muted/40 text-sm"
+                className="nodrag min-h-25 max-h-50 resize-y bg-muted/40 text-sm"
                 disabled={isLoading}
               />
             </div>

@@ -64,7 +64,7 @@ export function TextNode({ id, data, selected }: NodeProps<TextFlowNode>) {
         title={displayLabel}
         icon={<Type className="h-4 w-4" />}
         selected={selected}
-        className="w-[360px]"
+        className="w-90"
         right={
           <div className="flex items-center gap-1">
             {isLocked && <Lock className="h-4 w-4 text-foreground/50" />}
@@ -90,7 +90,7 @@ export function TextNode({ id, data, selected }: NodeProps<TextFlowNode>) {
             'text-sm leading-relaxed text-foreground/90',
             'placeholder:text-foreground/40 outline-none',
             'focus:ring-2 focus:ring-purple-500/50',
-            'min-h-[100px]'
+            'min-h-25'
           )}
         />
       </NodeShell>

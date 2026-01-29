@@ -189,7 +189,7 @@ export function ImageNode({ id, data, selected }: NodeProps<ImageFlowNode>) {
         title={displayLabel}
         icon={<ImageIcon className="h-4 w-4" />}
         selected={selected}
-        className="w-[360px]"
+        className="w-90"
         right={
           <div className="flex items-center gap-1">
             {isLocked && <Lock className="h-4 w-4 text-foreground/50" />}
@@ -306,7 +306,7 @@ export function ImageNode({ id, data, selected }: NodeProps<ImageFlowNode>) {
               <img
                 src={currentImage.imageUrl}
                 alt={currentImage.fileName}
-                className="w-full object-contain max-h-[250px]"
+                className="w-full object-contain max-h-62.5"
                 onLoad={() => {
                   // Preload base64 for LLM when image is displayed
                   if (!currentImage.imageBase64) {

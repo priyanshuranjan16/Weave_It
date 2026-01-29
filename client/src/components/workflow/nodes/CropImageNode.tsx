@@ -327,7 +327,7 @@ export function CropImageNode({ id, data, selected }: NodeProps<CropImageFlowNod
                 title={displayLabel}
                 icon={<Crop className="h-4 w-4" />}
                 selected={selected}
-                className="w-[360px]"
+                className="w-90"
                 right={
                     <div className="flex items-center gap-1">
                         {isLocked && <Lock className="h-4 w-4 text-foreground/50" />}
@@ -352,7 +352,7 @@ export function CropImageNode({ id, data, selected }: NodeProps<CropImageFlowNod
                             <img
                                 src={inputImageUrl}
                                 alt="Input Preview"
-                                className="w-full max-h-[150px] object-contain"
+                                className="w-full max-h-37.5 object-contain"
                                 onLoad={handleImageLoad}
                             />
                             {!outputImageUrl && data.cropWidth < 100 && (
@@ -552,7 +552,7 @@ export function CropImageNode({ id, data, selected }: NodeProps<CropImageFlowNod
                             <img
                                 src={outputImageUrl}
                                 alt="Cropped Output"
-                                className="w-full max-h-[150px] object-contain"
+                                className="w-full max-h-37.5 object-contain"
                             />
                         </div>
                     </div>
