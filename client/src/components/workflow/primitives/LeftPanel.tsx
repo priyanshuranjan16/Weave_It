@@ -165,13 +165,13 @@ export function LeftPanel({
               onChange={(e) => onEditedNameChange(e.target.value)}
               onBlur={onNameSubmit}
               onKeyDown={onNameKeyDown}
-              className="text-[18px] font-medium text-foreground bg-muted/60 rounded-md px-4 py-2 outline-none border border-purple-500 min-w-[200px]"
+              className="text-[18px] font-medium text-foreground bg-muted/60 rounded-md px-4 py-2 outline-none border border-purple-500 min-w-50"
             />
           ) : (
             <button
               type="button"
               onClick={onStartEditing}
-              className="text-[18px] z-20 font-medium text-foreground hover:text-foreground/80 truncate text-left transition-colors bg-muted/60 rounded-md px-4 py-2 border border-border min-w-[200px]"
+              className="text-[18px] z-20 font-medium text-foreground hover:text-foreground/80 truncate text-left transition-colors bg-muted/60 rounded-md px-4 py-2 border border-border min-w-50"
               title="Click to rename"
             >
               {workflowName}

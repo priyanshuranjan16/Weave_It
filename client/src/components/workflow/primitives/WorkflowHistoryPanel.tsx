@@ -137,7 +137,7 @@ export function WorkflowHistoryPanel({ isOpen, onClose }: WorkflowHistoryPanelPr
 
     return (
         <div
-            className="fixed right-0 top-0 h-full w-[380px] bg-card border-l border-border shadow-xl z-50 flex flex-col"
+            className="fixed right-0 top-0 h-full w-95 bg-card border-l border-border shadow-xl z-50 flex flex-col"
             style={{ transform: isOpen ? 'translateX(0)' : 'translateX(100%)' }}
         >
             {/* Header */}

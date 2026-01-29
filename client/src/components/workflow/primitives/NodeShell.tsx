@@ -36,7 +36,7 @@ export function NodeShell({
     <div
       className={cn(
         'rounded-xl border bg-card text-card-foreground shadow-lg',
-        'w-[280px] overflow-hidden transition-all',
+        'w-70 overflow-hidden transition-all',
         selected ? 'border-purple-500 ring-2 ring-purple-500/30' : 'border-border',
         className
       )}

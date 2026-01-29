@@ -32,7 +32,7 @@ export function TaskManagerPanel({ onClose }: TaskManagerPanelProps) {
   });
 
   return (
-    <div className="w-[340px] rounded-md border border-border/60 bg-card/95 backdrop-blur shadow-lg">
+    <div className="w-85 rounded-md border border-border/60 bg-card/95 backdrop-blur shadow-lg">
       <div className="flex items-center justify-between p-3">
         <div className="text-[16px] font-medium text-foreground">
           Task manager
@@ -64,14 +64,14 @@ export function TaskManagerPanel({ onClose }: TaskManagerPanelProps) {
           No active runs
         </div>
       ) : (
-        <div className="max-h-[300px] overflow-y-auto">
+        <div className="max-h-75 overflow-y-auto">
           {sortedTasks.map((task) => (
             <div
               key={task.id}
               className="flex items-center gap-3 px-3 py-3 border-b border-border/30 last:border-b-0"
             >
               {/* Status icon */}
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 {task.status === 'running' ? (
                   <Loader2 className="h-5 w-5 text-purple-400 animate-spin" />
                 ) : task.status === 'completed' ? (
