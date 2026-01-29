@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar_main flex flex-col w-full fixed top-0 left-0 z-[1000] bg-transparent transition-all duration-500 ${navbarVisibilityClass}`}
+      className={`navbar_main flex flex-col w-full fixed top-0 left-0 z-1000 bg-transparent transition-all duration-500 ${navbarVisibilityClass}`}
     >
       {/* Announcement Banner */}
       {/* <AnnouncementBanner /> */}
@@ -102,21 +102,21 @@ const Navbar = () => {
 /**
  * Announcement banner sub-component
  */
-const AnnouncementBanner = () => (
-  <section className="w-full h-[49px] bg-[#0E0E13] flex items-center justify-center overflow-hidden">
-    <div className="px-[2%] w-full flex justify-center">
-      <div className="flex items-center gap-3">
-        <img
-          src={NAVBAR_ASSETS.figmaIcon}
-          alt="Figma"
-          className="h-4 w-auto"
-        />
-        <p className="text-white text-[12px] font-medium">
-          <strong>Weavy is now a part of Figma</strong>
-        </p>
-      </div>
-    </div>
-  </section>
-);
+// const AnnouncementBanner = () => (
+//   <section className="w-full h-[49px] bg-[#0E0E13] flex items-center justify-center overflow-hidden">
+//     <div className="px-[2%] w-full flex justify-center">
+//       <div className="flex items-center gap-3">
+//         <img
+//           src={NAVBAR_ASSETS.figmaIcon}
+//           alt="Figma"
+//           className="h-4 w-auto"
+//         />
+//         <p className="text-white text-[12px] font-medium">
+//           <strong>Weavy is now a part of Figma</strong>
+//         </p>
+//       </div>
+//     </div>
+//   </section>
+// );
 
 export default Navbar;

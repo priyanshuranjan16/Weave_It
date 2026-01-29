@@ -56,7 +56,7 @@ export const ImageNode = ({ data }: ImageNodeProps) => {
         </span>
       </div>
       <div
-        className="relative rounded-[12px] overflow-hidden bg-white shadow-[0_8px_32px_rgba(0,0,0,0.08)] border border-black/5"
+        className="relative rounded-lg overflow-hidden bg-white shadow-[0_8px_32px_rgba(0,0,0,0.08)] border border-black/5"
         style={{ width: data.width, height: data.height }}
       >
         <img
@@ -140,7 +140,7 @@ export const VideoNode = ({ data }: VideoNodeProps) => {
         </span>
       </div>
       <div
-        className="relative rounded-[12px] overflow-hidden bg-white shadow-[0_8px_32px_rgba(0,0,0,0.08)] border border-black/5"
+        className="relative rounded-lg overflow-hidden bg-white shadow-[0_8px_32px_rgba(0,0,0,0.08)] border border-black/5"
         style={{ width: data.width, height: data.height }}
       >
         <video

@@ -34,7 +34,7 @@ const ProfessionalTools = () => {
 
   return (
     <section
-      className="relative w-full overflow-hidden py-8 md:py-[1rem]"
+      className="relative w-full overflow-hidden py-8 md:py-4"
       style={{
         backgroundImage: `
           linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, transparent 70%),
@@ -49,8 +49,8 @@ const ProfessionalTools = () => {
       <div className="container relative z-10 px-4 md:px-[5%]">
         <div className="flex flex-col items-center">
           {/* Header Section */}
-          <div className="text-center max-w-[1200px] px-2">
-            <h3 className="text-[32px] md:text-[60px] lg:text-[6rem] leading-[1.1] tracking-[-0.03em] text-black mb-4 md:mb-[24px]">
+          <div className="text-center max-w-300 px-2">
+            <h3 className="text-[32px] md:text-[60px] lg:text-[6rem] leading-[1.1] tracking-[-0.03em] text-black mb-4 md:mb-6">
               With all the
               <br className="md:hidden" />
               {" "}professional
@@ -63,7 +63,7 @@ const ProfessionalTools = () => {
           </div>
 
           {/* Interaction Area */}
-          <div className="relative w-full max-w-[1400px] mx-auto">
+          <div className="relative w-full max-w-350 mx-auto">
             {/* Tool Description - Visible when a tool is selected on mobile */}
             {activeDescription && (
               <div className="md:hidden px-4 py-6 text-center">

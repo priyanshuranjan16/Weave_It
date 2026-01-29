@@ -79,7 +79,7 @@ const HeroSection = () => {
     </div>
 
     {/* Description */}
-    <div className="ml-[22.5rem]">
+    <div className="ml-90">
       <p className="max-w-lg text-base md:text-lg leading-relaxed text-black/90">
         Turn your creative vision into scalable workflows. Access all AI models and professional editing tools in one node based platform.
       </p>

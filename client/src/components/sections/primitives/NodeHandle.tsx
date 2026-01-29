@@ -29,7 +29,7 @@ export const NodeHandle = ({ type, position }: NodeHandleProps) => {
     <Handle
       type={type}
       position={position}
-      className={`!w-[10px] !h-[10px] !bg-white !border-[2px] !border-black/20 ${positionClass}`}
+      className={`w-2.5! h-2.5! bg-white! border-2! border-black/20! ${positionClass}`}
     />
   );
 };

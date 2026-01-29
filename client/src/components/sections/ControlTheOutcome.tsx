@@ -59,15 +59,15 @@ const ControlTheOutcome = () => {
         <h2 className="text-[clamp(2.5rem,8vw,5.5rem)] font-medium leading-[0.95] tracking-[-0.03em] text-black mb-4 md:mb-6">
           Control the<br />Outcome
         </h2>
-        <p className="max-w-[360px] md:max-w-[500px] mx-auto text-base md:text-lg text-[#737373] leading-relaxed px-2">
+        <p className="max-w-90 md:max-w-125 mx-auto text-base md:text-lg text-muted-foreground leading-relaxed px-2">
           Layers, type, and blends—all the tools to bring your wildest ideas
           to life. Your creativity, our compositing power.
         </p>
       </div>
 
       {/* Parallax Composition */}
-      <div className="container mx-auto px-2 md:px-[5%] relative z-10 min-h-[100px] md:min-h-[400px] flex items-center justify-center perspective-1000">
-        <div className="relative w-full max-w-full aspect-[1/1] md:aspect-[16/9]">
+      <div className="container mx-auto px-2 md:px-[5%] relative z-10 min-h-25 md:min-h-100 flex items-center justify-center perspective-1000">
+        <div className="relative w-full max-w-full aspect-square md:aspect-video">
           {/* Main Background UI */}
           <img
             src="https://cdn.prod.website-files.com/681b040781d5b5e278a69989/682ee0eea4106dbd4133065d_Weavy%20UI.avif"
