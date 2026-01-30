@@ -65,28 +65,28 @@ const HeroSection = () => {
     >
       {/* Hero Text Content (Overlay) */}
       <div className="absolute top-24 md:top-32 left-6 md:left-20 z-10 pointer-events-none select-none max-w-7xl">
-  <div className="flex flex-col gap-8">
-    
-    {/* Headline Row */}
-    <div className="flex items-baseline gap-16">
-      <h1 className="text-7xl lg:text-8xl leading-none tracking-tight text-black font-normal">
-        Weavy
-      </h1>
+        <div className="flex flex-col gap-8">
 
-      <h2 className="text-7xl lg:text-8xl leading-none tracking-tight text-black font-normal">
-        Artistic Intelligence
-      </h2>
-    </div>
+          {/* Headline Row */}
+          <div className="flex items-baseline gap-16">
+            <h1 className="text-7xl lg:text-8xl leading-none tracking-tight text-black font-normal">
+              Weavy
+            </h1>
 
-    {/* Description */}
-    <div className="ml-90">
-      <p className="max-w-lg text-base md:text-lg leading-relaxed text-black/90">
-        Turn your creative vision into scalable workflows. Access all AI models and professional editing tools in one node based platform.
-      </p>
-    </div>
+            <h2 className="text-7xl lg:text-8xl leading-none tracking-tight text-black font-normal">
+              Artistic Intelligence
+            </h2>
+          </div>
 
-  </div>
-</div>
+          {/* Description */}
+          <div className="ml-90">
+            <p className="max-w-lg text-base md:text-lg leading-relaxed text-black/90">
+              Turn your creative vision into scalable workflows. Access all AI models and professional editing tools in one node based platform.
+            </p>
+          </div>
+
+        </div>
+      </div>
 
 
       {/* React Flow Container */}
