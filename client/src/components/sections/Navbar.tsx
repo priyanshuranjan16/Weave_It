@@ -14,7 +14,11 @@ import { NAV_LINKS, NAVBAR_ASSETS } from './data';
  * - "Start Now" CTA that shrinks on scroll
  * - Auto-hide when footer is visible
  */
-const Navbar = () => {
+interface NavbarProps {
+  hideOnFooter?: boolean;
+}
+
+const Navbar = ({ hideOnFooter = true }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [footerVisible, setFooterVisible] = useState(false);
 
@@ -36,7 +40,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const navbarVisibilityClass = footerVisible
+  const navbarVisibilityClass = (hideOnFooter && footerVisible)
     ? 'opacity-0 -translate-y-full pointer-events-none'
     : 'opacity-100 translate-y-0';
 
