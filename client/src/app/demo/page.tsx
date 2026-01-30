@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Navbar from '@/components/sections/Navbar';
 
 export default function DemoPage() {
     return (
@@ -10,7 +11,7 @@ export default function DemoPage() {
                 backgroundSize: '100% 100%',
             }}
         >
-            
+            <Navbar />
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative z-10 p-12 bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10 shadow-2xl max-w-lg mx-4 text-center transform hover:scale-[1.02] transition-transform duration-500">
                 <h1 className="text-5xl md:text-7xl font-normal text-white mb-6 drop-shadow-xl tracking-tight">
@@ -27,7 +28,8 @@ export default function DemoPage() {
                 >
                     Return Home
                 </Link>
-            </div>
+            </div>      
         </main>
+        
     );
 }
