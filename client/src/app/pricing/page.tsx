@@ -4,6 +4,8 @@ import { useState } from 'react';
 import AnimatedNumber from "@/components/ui/AnimatedNumber";
 import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
+import MonthlyCreditTable from './data/MonthlyCreditTable';
+import PricingFAQ from './data/PricingFAQ';
 
 export default function CollectivePage() {
     const [billingCycle, setBillingCycle] = useState<'monthly' | 'annually'>('annually');
@@ -18,7 +20,7 @@ export default function CollectivePage() {
           linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
           linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px)
         `,
-                backgroundSize: '100% 100%, cover, cover, 10px 10px, 10px 10px',
+                backgroundSize: '100% 100%, cover, 100% auto, 10px 10px, 10px 10px',
                 backgroundPosition: 'center bottom, center center, center top, 0 0, 0 0',
                 backgroundRepeat: 'no-repeat, no-repeat, no-repeat, repeat, repeat',
             }}>
@@ -246,6 +248,8 @@ export default function CollectivePage() {
                     </div>
                 </div>
             </div>
+            <MonthlyCreditTable />
+            <PricingFAQ />
         </main>
     );
 }
