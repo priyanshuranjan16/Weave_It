@@ -1,32 +1,57 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 interface FAQItem {
     question: string;
-    answer: string;
+    answer: React.ReactNode;
 }
 
 const FAQS: FAQItem[] = [
     {
-        question: "What happens if I run out of credits?",
-        answer: "If you run out of credits, you can easily top up your account with additional credit packs starting at $10. Your subscription will also automatically renew your monthly allowance at the start of your next billing cycle."
+        question: "How do Weavy credits work?",
+        answer: "Weavy credits are your currency for AI generation. Each plan includes a monthly credit allocation that you spend when creating content with different AI models. Different models require different amounts of credits per generation - for example, running Flux costs fewer credits than using Veo 3."
     },
     {
-        question: "Can I upgrade or downgrade my plan?",
-        answer: "Yes, you can upgrade or downgrade your plan at any time from your account settings. Changes to your plan will take effect immediately, and any price difference will be prorated."
+        question: "What happens if I use all my monthly credits?",
+        answer: "For paid plans (Starter, Professional, and Team), you can purchase additional credits at $10 per 1,000 credits (Starter) or $10 per 1,200 credits (Professional and Team). These topped-up credits roll over for 12 months, giving you flexibility beyond your monthly allocation. The Free plan doesn't offer credit top-ups."
     },
     {
-        question: "Do my unused credits roll over?",
-        answer: "Unused credits do not roll over on the Free and Starter plans. However, on the Professional and Team plans, we offer a 3-month credit rollover feature, allowing you to accumulate unused credits for future use."
+        question: "Do unused credits roll over to the next month?",
+        answer: "If you’re on a Professional or Team plan, your base monthly credits roll over to the next month - as long as your subscription stays active. You can accumulate up to 3x your monthly credit amount. After that, any unused credits above the limit will expire. Starter and Free plans don’t include rollover. Any additional credits purchased through top-ups continue to roll over for 12 months from the purchase date."
     },
     {
-        question: "What is the difference between monthly and annual billing?",
-        answer: "Annual billing offers a significant discount (20% off) compared to monthly billing. You are billed once per year for the entire 12-month period, whereas monthly billing charges you every month."
+        question: "Can I use Weavy creations for client work and commercial projects?",
+        answer: "Absolutely! We offer one of the most advanced commercial rights policies in the industry. Weavy as a platform provides full commercial rights and we never train on your work. Most models available through our platform are cleared for commercial use and don't train on customer data. As an open platform, we also give you access to cutting-edge models that may have different terms. We negotiate the best legal and commercial terms available with all providers for your benefit."
     },
     {
-        question: "Is there a free trial for paid plans?",
-        answer: "We offer a Free plan that gives you 150 monthly credits forever, so you can test out our features before committing to a paid subscription. We do not offer separate trials for the paid tiers."
+        question: "How does Weavy handle my data and creations?",
+        answer: "Your creative work stays yours. We don't use your images or prompts to train our platform. We implement strict data standards and security measures to protect your content. We only collect essential data to provide our services and anonymous metadata about workflows to improve recommendations."
+    },
+    {
+        question: "What is Weavy's refund and cancellation policy?",
+        answer: "You may elect not to renew a subscription by giving notice of cancellation to Figma before the end of the current subscription term. You can give notice of cancellation through your Figma Weave account settings. Please note that any cancellation will take effect at the end of the the current subscription term. Fees paid are non-refundable and quantities purchased cannot be decreased during the relevant subscription term."
+    },
+    {
+        question: "Does Weavy provide workshops and training?",
+        answer: "Yes! We provide free office hours, a comprehensive VOD library of educational content, and a template library filled with incredible workflows to jumpstart your creative process. Enterprise clients get team training sessions. Contact us directly if you have a specific training or educational need."
+    },
+    {
+        question: "Can I control how my team uses credits?",
+        answer: "Yes! With the Team plan, you get access to our Credits Management system.Set a monthly default or custom allocation per user, track usage in real time, and stay in control."
+    },
+    {
+        question: "Still have questions?",
+        answer: (
+            <span>
+                We&apos;re here to help! Reach out to us at{" "}
+                <Link href="mailto:support@weavy.ai" className="text-blue-600 hover:underline">
+                    support@weavy.ai
+                </Link>{" "}
+                and our team will get back to you promptly.
+            </span>
+        )
     }
 ];
 
