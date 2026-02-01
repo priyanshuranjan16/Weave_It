@@ -250,6 +250,7 @@ export default function CollectivePage() {
             </div>
             <MonthlyCreditTable />
             <PricingFAQ />
+            <Footer />
         </main>
     );
 }
