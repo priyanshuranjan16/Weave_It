@@ -291,7 +291,7 @@ export const simpleTestWorkflow = {
             type: 'text',
             position: { x: 100, y: 300 },
             data: {
-                text: 'Explain quantum computing in simple terms.',
+                text: 'Explain cloud computing in simple terms.',
             },
         },
         {
