@@ -103,13 +103,13 @@ export function RightPanel({
               <TbAsterisk className="text-[16px]" />
               <p>100 credits</p>
             </div>
-            <Button
+            {/* <Button
               size="sm"
               className="h-8 rounded-md bg-[#faffc7] text-black hover:bg-[#f0f5a0] px-4"
             >
               <PiShareLight className="mr-2 h-4 w-4" />
               Share
-            </Button>
+            </Button> */}
           </div>
 
           {/* Save status indicator with Save button */}
