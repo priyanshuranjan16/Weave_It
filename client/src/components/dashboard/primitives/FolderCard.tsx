@@ -86,9 +86,9 @@ export function FolderCard({
           }} className="cursor-pointer">
             Rename
           </ContextMenuItem>
-          <ContextMenuItem onClick={() => onMove(folder)} className="cursor-pointer">
+          {/* <ContextMenuItem onClick={() => onMove(folder)} className="cursor-pointer">
             Move
-          </ContextMenuItem>
+          </ContextMenuItem> */}
           <ContextMenuSeparator />
           <ContextMenuItem
             onClick={() => onDelete(folder.id)}
