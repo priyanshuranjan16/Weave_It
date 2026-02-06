@@ -352,7 +352,7 @@ export default function DashboardPage() {
                   )}
                 </div>
                 <span className="truncate text-[14px] font-medium">{user?.fullName || 'Loading...'}</span>
-                <ChevronDown className="h-3 w-3 text-foreground/80" />
+                {/* <ChevronDown className="h-3 w-3 text-foreground/80" /> */}
               </button>
 
               {/* Create button */}
@@ -407,11 +407,11 @@ export default function DashboardPage() {
                     </Popover>
                   </div>
 
-                  <SidebarNavItem disabled label="Shared with me" icon={<PiUsers className="h-5 w-5" />} />
-                  <SidebarNavItem
+                  {/* <SidebarNavItem disabled label="Shared with me" icon={<PiUsers className="h-5 w-5" />} /> */}
+                  {/* <SidebarNavItem
                     label="Apps"
                     icon={<img src="https://app.weavy.ai/icons/apps.svg" alt="apps" className="h-5 w-5 invert" />}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
