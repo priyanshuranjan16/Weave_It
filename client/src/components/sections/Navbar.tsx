@@ -91,7 +91,7 @@ const Navbar = ({ hideOnFooter = true }: NavbarProps) => {
           <Link
             href="/signin"
             className={`bg-[#FDFFA8] text-black flex items-end justify-center tracking-wide transition-all duration-300 rounded-bl-md hover:text-white hover:bg-[#16161c] active:scale-[0.98] ${scrolled
-              ? 'h-[32px] px-2 text-[13px] pb- uppercase'
+              ? 'h-8 px-2 text-[13px] pb- uppercase'
               : 'h-25 px-4 text-[28px] pb-1'
               }`}
           >

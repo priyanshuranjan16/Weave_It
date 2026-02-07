@@ -74,7 +74,7 @@ const ProfessionalTools = () => {
             )}
 
             {/* Main Image Container */}
-            <div className="relative w-full aspect-[16/8] rounded-[12px] md:rounded-[20px] overflow-hidden -translate-y-[30%] md:-translate-y-[30%] mx-auto max-w-[400px] md:max-w-none">
+            <div className="relative w-full aspect-16/8 rounded-lg md:rounded-[20px] overflow-hidden -translate-y-[30%] md:-translate-y-[30%] mx-auto max-w-100 md:max-w-none">
               <img
                 src={activeImage}
                 alt="Professional Tool Demonstration"
@@ -95,7 +95,7 @@ const ProfessionalTools = () => {
                     onHover={() => setActiveTool(tool.id)}
                     onLeave={() => {}}
                     onClick={() => setActiveTool(activeTool === tool.id ? 'default' : tool.id)}
-                    className="flex-shrink-0 snap-center"
+                    className="shrink-0 snap-center"
                   />
                 ))}
               </div>
