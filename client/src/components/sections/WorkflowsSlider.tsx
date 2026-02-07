@@ -19,11 +19,11 @@ export default function WorkflowsSlider() {
     useHorizontalScroll({ scrollAmount: 400 });
 
   return (
-    <section className="hidden md:block bg-[#252525] text-white py-[120px] md:py-[160px] overflow-hidden">
-      <div className="container px-[5%] max-w-[1440px] mx-auto">
+    <section className="hidden md:block bg-[#252525] text-white py-30 md:py-40 overflow-hidden">
+      <div className="container px-[5%] max-w-360 mx-auto">
         {/* Header Row */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-[48px]">
-          <div className="max-w-[500px]">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12">
+          <div className="max-w-125">
             <h2 className="text-[5rem] font-medium leading-[1.05] tracking-[-0.03em] mb-[20px]">
               Explore Our<br />Workflows
             </h2>
