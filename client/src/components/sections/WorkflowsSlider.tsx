@@ -24,7 +24,7 @@ export default function WorkflowsSlider() {
         {/* Header Row */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12">
           <div className="max-w-125">
-            <h2 className="text-[5rem] font-medium leading-[1.05] tracking-[-0.03em] mb-[20px]">
+            <h2 className="text-[5rem] font-medium leading-[1.05] tracking-[-0.03em] mb-5">
               Explore Our<br />Workflows
             </h2>
             <p className="text-white text-[15px] md:text-[16px] leading-[1.6]">
@@ -42,7 +42,7 @@ export default function WorkflowsSlider() {
       <div className="relative w-full">
         <div
           ref={scrollRef}
-          className="flex gap-[24px] overflow-x-auto scrollbar-hide"
+          className="flex gap-6 overflow-x-auto scrollbar-hide"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {WORKFLOW_CARDS.map((workflow) => (
@@ -52,8 +52,8 @@ export default function WorkflowsSlider() {
       </div>
 
       {/* Navigation Controls - Desktop (Bottom Left) */}
-      <div className="container px-[5%] max-w-[1440px] mx-auto hidden md:block mt-[40px]">
-        <div className="flex gap-[12px]">
+      <div className="container px-[5%] max-w-360 mx-auto hidden md:block mt-10">
+        <div className="flex gap-3">
           <NavigationButton
             direction="left"
             onClick={() => scrollLeft()}
@@ -68,7 +68,7 @@ export default function WorkflowsSlider() {
       </div>
 
       {/* Navigation Controls - Mobile */}
-      <div className="container px-[5%] max-w-[1440px] mx-auto">
+      <div className="container px-[5%] max-w-360 mx-auto">
         <div className="flex md:hidden gap-[12px] mt-[32px] justify-center">
           <NavigationButton
             direction="left"
