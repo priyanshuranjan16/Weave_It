@@ -96,7 +96,7 @@ export function RightPanel({
           marginRight: isHistoryOpen ? 404 : 24, // 380px history panel + 24px margin
         }}
       >
-        <div className="w-[280px] rounded-md border border-border/60 bg-card/80 backdrop-blur p-3 shadow-lg">
+        <div className="w-70 rounded-md border border-border/60 bg-card/80 backdrop-blur p-3 shadow-lg">
           {/* Top row: Credits + Share */}
           <div className="flex items-center justify-between">
             <div className="text-[14px] flex items-center gap-1 font-medium text-foreground">
